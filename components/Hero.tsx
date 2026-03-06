@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Hero: React.FC = () => {
@@ -20,9 +21,9 @@ const Hero: React.FC = () => {
 
         {/* Call to Action Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button className="px-8 py-3.5 text-sm font-semibold text-zinc-950 transition-all duration-200 bg-emerald-400 rounded-full hover:bg-emerald-300 hover:scale-105 active:scale-95">
+          <Link href={"/generate"} className="px-8 py-3.5 text-sm font-semibold text-zinc-950 transition-all duration-200 bg-emerald-400 rounded-full hover:bg-emerald-300 hover:scale-105 active:scale-95">
             Create Secret Link
-          </button>
+          </Link>
           <a href='#works' className="px-8 py-3.5 text-sm font-semibold text-white transition-all duration-200 border border-zinc-800 rounded-full hover:bg-zinc-800/50">
             How it works
           </a>
